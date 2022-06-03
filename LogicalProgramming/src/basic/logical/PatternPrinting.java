@@ -9,18 +9,21 @@ public class PatternPrinting {
 		int row = 4;
 		int column = 4;
 		List<Integer> list = new ArrayList<Integer>();
+		//Star pattern
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 				System.out.print("* ");
 			}
 			System.out.println();
 		}
+		//number pattern
 		for (int i = 0; i < row; i++) {
 			for (int j = 0; j < column; j++) {
 				System.out.print(i + 1 + " ");
 			}
 			System.out.println();
 		}
+		//number triangle pattern
 		for (int k = 0; k <= row; k++) {
 			for (int l = 0; l < k; l++) {
 				System.out.print(k + " ");
