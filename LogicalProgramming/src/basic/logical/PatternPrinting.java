@@ -49,6 +49,26 @@ public class PatternPrinting {
 
 		}
 		System.out.println(list);
+		
+		
+		System.out.println("-----------------------------------------------");
+		int x=7;
+		int temp=0;
+		String expression=null;
+        for(int i = 1;i<=x;i++) {
+        	temp=i+temp;
+        	String s;
+        	if(i<x) 
+        		 s = "+";
+        	else
+        		s="=";
+        	if(expression!=null) {
+        	expression =expression+i+s;
+        	}
+        	else
+        		expression=i+s;
+        }		
+	System.out.println(expression+temp);
 	}
 
 }
